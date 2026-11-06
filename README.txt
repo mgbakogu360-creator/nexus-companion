@@ -1,33 +1,25 @@
-NEXUS WEBSITE — IMAGE INTEGRATION BUILD
+NEXUS WEBSITE — FINAL SHOWCASE UPDATE
 
-Open index.html in a modern browser to preview the website.
+Open index.html in a modern browser to preview the website. Upload the entire nexus_companion folder to the existing GitHub repository / Cloudflare Pages project, preserving the assets folder. No build command is required.
 
-Included:
-- Responsive homepage with swipeable three-slide showcase.
-- Two supplied city images with gentle camera drift and visible animated vehicle silhouettes.
-- Navigation at the top and repeated beneath the homepage image.
-- Lore section and VR/Reality location breakdown.
-- Character archive, profile pop-ups and identity switching for entries with two supplied portraits.
-- All 46 supplied WebP images embedded as Base64 data URIs in the website source.
-- Pre-Intro images use the supplied embedded image files instead of TinyURL image addresses.
-- Character descriptions for hidden alternate profiles and Touno display “this character file is hidden.”
-- Identity switching uses a Firefox-safe two-dimensional crossfade instead of 3D backface rendering.
-- Anonymous head-and-shoulders placeholder where a second identity portrait is withheld.
-- Top-left Pre Intro button and supplied webtoon dialogue/image references.
-- Music OFF by default. Optional original browser-generated phonk/funk-inspired instrumental beat; no human voice or sampled music.
-- Interface sound OFF by default.
-- Reduced-motion support.
+HOMEPAGE SHOWCASE ORDER:
+1. NEXUS city source video (muted, inline, looping).
+2. Programmed city scene using the supplied city artwork, existing animated traffic, drifting light and atmospheric effects.
+3. Kiri / There original video (muted, inline, looping).
+The active video plays when its slide is selected; inactive videos pause and reset.
 
-PRIVACY:
-- Video integration is intentionally deferred to the next update. The Kiri and NEXUS videos have not been changed in this build.
-- Hiding download controls or blocking right-click does not make a publicly hosted video private. Use authenticated or signed/expiring video delivery before embedding private footage.
-- All 46 supplied WebP images are embedded in the HTML as Base64 data URIs; no TinyURL or Cloudinary image URLs are required for these images.
+CHARACTER LABEL FIX:
+Pop, OddEven and Sageo now identify their first (VR) face as NEXUS / VR and their reverse face as REALITY.
 
-CONTENT NOTES:
-- Internal image codes are not displayed.
-- Character information is based on supplied source material; unknown details are not invented.
-- Some archive categories and parent entries still need a careful canon audit before public launch. S10's profile must remain blank; do not add an invented portrait.
-- VR/Reality switching is only shown where the image inventory provides both faces. Single-identity entries do not get a fabricated second face.
+PRE-INTRO IMAGE FIX:
+Pre-Intro image panels now use background-size: contain and a responsive bounded display area so the full source images remain visible instead of being cropped by cover.
 
-DEPLOYMENT:
-Static website suitable for GitHub Pages or Cloudflare Pages. Upload the entire nexus_companion folder, preserving the assets folder. No build command is required.
+PRESERVED FEATURES:
+- Existing NEXUS glass UI, navigation, lore, character archive, location guide and music controls.
+- Existing embedded Base64 character image data and city image assets.
+- Existing Firefox-safe two-dimensional identity crossfade.
+- Reduced-motion support and mobile responsive layout.
+
+NOTES:
+- The programmed city scene is native HTML/CSS animation layered over the existing city artwork; it is not a newly encoded MP4.
+- Videos are publicly hosted source media. This build does not claim to make their URLs private.
